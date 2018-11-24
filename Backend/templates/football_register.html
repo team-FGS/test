@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign Up</title>
+<link rel="stylesheet" type="text/css" href="football_register.css">
+</head>
+<body>
+    <div class="sign">
+        <form action="{{url_for('football')}}">
+            <label for="rfid">RFID</label>
+            <br>
+            <input type="text" id="rfid" name="rfid" style="font-family: 'Courier New', Courier, monospace"  placeholder="Your RFID...">
+            <br>
+            <label for="fname">First Name</label>
+            <br>
+            <input type="text" id="fname" name="firstname" style="font-family: 'Courier New', Courier, monospace" placeholder="Your name..">
+            <br>
+            <label for="lname">Last Name</label>
+            <br>
+            <input type="text" id="lname" name="lastname" style="font-family: 'Courier New', Courier, monospace" placeholder="Your last name..">
+            <br>
+            <label for="position">Position</label>
+            <br>
+            <select id="position" name="position" style="font-family: 'Courier New', Courier, monospace">
+              <option value="None">Select Position...</option>
+              <option value="defender ">Defender</option>
+              <option value="midfielder">Midfielder</option>
+              <option value="forward">Forward</option>
+            </select>
+            <br>
+            <label for="bd">BD</label>
+            <br>
+            <select id="bd" name="bd" style="font-family: 'Courier New', Courier, monospace">
+              <option value="None">Select BD...</option>
+              <option value="left">Left</option>
+              <option value="rightr">Right</option>
+            </select>
+
+            <input type="submit" value="Submit" style="font-family: 'Courier New', Courier, monospace">
+          </form>
+    </div>
+          <div style="margin-left:50%;padding:1px 16px;height:1000px;">
+          <img class="bg" src="https://banner2.kisspng.com/20180224/orw/kisspng-fifa-world-cup-football-player-football-vector-5a916d73318857.5290512215194801792029.jpg">
+          </div>
+</body>
+</html>
