@@ -1,0 +1,10 @@
+/COM,ANSYS RELEASE Release 19.0      BUILD 19.0      UP20171214       22:13:30
+
+ *** ERROR ***                           CP =       0.547   TIME= 22:13:35
+ Data file D:\File\Software Development\from seefa\socglo.db has         
+ incorrect format, is missing READ/WRITE permission, or is empty for     
+ RESUME.                                                                 
+
+ *** WARNING ***                         CP =       0.547   TIME= 22:13:35
+ WHILE PROCESSING FILE BASED INPUT (/INPUT OR MACRO) AN ERROR HAS        
+ OCCURRED.  SHOULD INPUT PROCESSING BE SUSPENDED?                        

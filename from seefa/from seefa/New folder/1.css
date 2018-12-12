@@ -1,0 +1,119 @@
+/*all page*/
+body{
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+#nav{
+    position:fixed;
+    width: 1366px;
+    height: 30px;
+}
+
+#head{
+    font-size: 180%;
+}
+#head1{
+    font-size: 120%
+}
+
+/*sample*/
+#test{
+    color: #212529
+}
+
+/*page1*/
+#see{
+    background-color: white;
+}
+#pass{
+    padding-left: 33%;
+}
+
+#tass{
+    padding-left: 30%;
+    padding-top: 2%;
+}
+#mass{
+    border-radius: 200px;
+    background-color: #CACFD2
+}
+#c1{
+    background-color: #212529
+}
+
+/*page2*/
+#color{
+    background-color: #CACFD2
+}
+#side{
+    padding-left: 85%;
+}
+#corner{
+    border-radius: 550px;
+    
+}
+#corner1{
+    padding-left: 15%;
+    padding-top: 7%;
+    
+}
+#corner2{
+    padding-left: 8%;
+    padding-top: 7%;
+}
+
+/*page4*/
+#ball{
+    padding-left: 20%;
+    padding-top: 10%;
+}
+
+input[type=text], select {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    width: 70%;
+    background-color:  #151f74;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Add a background color to the submit button on mouse-over */
+  input[type=submit]:hover {
+    background-color: #1b289b;
+  }
+  .sign{
+    width: 50%;
+    list-style-type: none;
+    margin: 5%;
+    padding: 0;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    display: block;
+  }
+  .bg{
+      width:50%;
+      /*display: block;*/
+      position:fixed;
+  }
+
+  option{
+      background-color: white;
+  }
+  option:hover{
+      color:black;
+      background-color:#ccc;
+
+  }
