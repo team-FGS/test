@@ -73,7 +73,76 @@
                         <tr>
                                 <td id="widthh"><img width="80px" src="/static/{{device.id}}.png"></img></td>
                                 <td id="width">{{device.status}}</td>
-                                <td id="widthhh">{{device.param_1}} <br>{{device.param_2}}</td>
+                                ​{% if device.id == 1 %}
+                                    {% if device.level != None %} 
+                                    <td id="widthhh">Level: {{device.level}} </td>
+                                    {% else %}
+                                    <td id="widthhh">Level: undetected </td>
+                                    {% endif %}
+                                {% endif %}
+                                ​{% if device.id == 2 %}
+                                    {% if device.temperature != None %} 
+                                    <td id="widthhh">Temperature: {{device.temperature}} degrees celsius</td>
+                                    {% else %}
+                                    <td id="widthhh">Temperature: undetected </td>
+                                    {% endif %}
+                                {% endif %}
+                                ​{% if device.id == 3 %}
+                                    {% if device.status != None and device.temperature != None %} 
+                                    <td id="widthhh">Status: {{device.boiling_status}} <br>Temperature: {{device.temperature}} degrees celsius</td>
+                                    {% else %}
+                                    <td id="widthhh">Status: undetected <br>Temperature: undetected </td>
+                                    {% endif %}
+                                {% endif %}
+                                ​{% if device.id == 4 %}
+                                    {% if device.channel != None and device.sound_volume != None %}
+                                    <td id="widthhh">Channel: {{device.channel}} <br>Sound Volume: {{device.sound_volume}}</td>
+                                    {% else %}
+                                    <td id="widthhh">Channel: undetected <br>Sound Volume: undetected </td>
+                                    {% endif %}
+                                {% endif %}
+                                ​{% if device.id == 5 %}
+                                    {% if device.channel != None and device.sound_volume != None %}
+                                    <td id="widthhh">Channel: {{device.channel}} MHz <br>Sound Volume: {{device.sound_volume}}</td>
+                                    {% else %}
+                                    <td id="widthhh">Channel: undetected <br>Sound Volume: undetected </td>
+                                    {% endif %}
+                                {% endif %}
+                                {% if device.id == 6 %}
+                                    {% if device.level != None %} 
+                                    <td id="widthhh">Brightness Level: {{device.level}}</td>
+                                    {% else %}
+                                    <td id="widthhh">Level:0 </td>
+                                    {% endif %}
+                                {% endif %}
+                                {% if device.id == 7 %}
+                                    {% if device.level != None %}
+                                    <td id="widthhh">Temperature Level: {{device.level}}</td>
+                                    {% else %}
+                                    <td id="widthhh">OFF </td>
+                                    {% endif %}
+                                {% endif %}
+                                {% if device.id == 8 %}
+                                    {% if device.temperature != None and device.remaining_time != None %}
+                                    <td id="widthhh">Temperture: {{device.temperature}} degrees celsius<br>Remaining Time: {{device.remaining_time}} hours</td>
+                                    {% else %}
+                                    <td id="widthhh">Temperature: undetected <br>Remaining Time: undetected </td>
+                                    {% endif %}
+                                {% endif %}
+                                {% if device.id == 9 %}
+                                    {% if device.mode != None and device.remaining_time != None %}
+                                    <td id="widthhh">Mode: {{device.mode}} <br>Remaining Time: {{device.remaining_time}} hours</td>
+                                    {% else %}
+                                    <td id="widthhh">Mode: undetected <br>Remaining Time: undetected </td>
+                                    {% endif %}
+                                {% endif %}
+                                {% if device.id == 10 %}
+                                    {% if device.temperature != None %}
+                                    <td id="widthhh">Temperature: {{device.temperature}} degrees celsius</td>
+                                    {% else %}
+                                    <td id="widthhh">Temperature: undetected </td>
+                                    {% endif %}
+                                {% endif %}
                         </tr>
     
                         {% endfor %}
