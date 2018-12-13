@@ -1,0 +1,98 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="refresh" content="5" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SOCGLO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="/static/status.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <!--<script src="main.js"></script>-->
+</head>
+
+<body>
+    <nav class="navbar navbar-light" id="nav">
+        <a class="navbar-brand" href="/home">
+            <img src="/static/logo.png" class="d-inline-block align-top" id="logo" alt="">
+            SOCGLO
+        </a>
+
+        <ul class="nav navbar-inverse">
+            <li class="nav-item dropdown">
+                <div class="dropdown">
+                    <button class="dropbtn">MY GLOVE</button>
+                    <div class="dropdown-content">
+                        <a href="/status">Status</a>
+                        <a href="/settings">Setting</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <div class="dropdown">
+                    <button class="dropbtn">SOCCER</button>
+                    <div class="dropdown-content">
+                        <a href="/socglo/football/">Stat</a>
+                        <a href="/socglo/football/register">Register</a>
+                    </div>
+                </div>
+            </li>
+            <a class="navbar-brand" href="/logout">
+                <center><img src="/static/locked-padlock.png" class="d-inline-block align-top" id="log" alt=""></center>
+            </a>
+        </ul>
+    </nav>
+ 
+    <a href="/home">
+        <img src="/static/restart.png" id="e" class="d-inline-block align-top" alt="">
+    </a>
+
+    <table id="bg">
+        <tr>
+            <th width=50%><!--left-->
+                <img src="/static/11 (3).jpg" id = "en">
+            </th>
+            <th width="50%" valign="top" id="tab"><!--right-->
+                    <div id="text">
+                        STATUS
+                    </div>
+                    <br>
+                    <center><table id="tib" border="1">
+                        <thead>
+                            <tr>
+                                <th id="widthh">THING</th>
+                                <th id="width">STATUS</th>
+                                <th id="widthhh">DETAIL</th>
+                            </tr>
+                        </thead>
+
+                        {% for device in devices %}
+                        <tr>
+                                <td id="widthh"><img width="80px" src="/static/{{device.id}}.png"></img></td>
+                                <td id="width">{{device.status}}</td>
+                                <td id="widthhh">{{device.param_1}} <br>{{device.param_2}}</td>
+                        </tr>
+    
+                        {% endfor %}
+                                    
+                        <tfoot>
+
+                        </tfoot>
+                        <tbody>
+                            <tr>
+    
+                            </tr>
+                        </tbody>
+                    </table></center>
+                <p align="right">
+                    <a class="navbar-brand" href="/settings">
+                    <img src="/static/pencil.png" class="d-inline-block align-top" id="edit" alt=""></p>
+                </a>
+            </th>
+        </tr>
+    </table>
+</body>
+</html>

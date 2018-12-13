@@ -1,0 +1,56 @@
+/*earthtone color code:
+- http://www.varian.net/dreamview/dreamcolor/earth.html
+- http://www.creativecolorschemes.com/resources/free-color-schemes/earth-tone-color-scheme.shtml
+- https://encycolorpedia.com/5d3b1a
+- https://encycolorpedia.com/9a6642
+*/
+
+html, body{
+padding:0px;
+margin:0px;
+height:100%;
+}
+
+#win{
+    width: 100%;
+    height: 100%;
+}
+
+#en{
+    width: 460px;
+    height: 490px;
+    margin: auto auto;
+    display: block;
+}
+
+#logo{
+    width: 175;
+    height: 60;
+    margin: auto auto;
+    display: block;
+}
+
+#pic{
+    width: 100%;
+    height: 100%;
+}
+
+#text{
+    text-align: center;
+}
+
+#width{
+    width: 256;
+}
+
+#log{
+    width: 256;
+    background-color: #727272;
+    color: white;
+}
+
+#pass{
+    width: 256;
+    background-color: #C4C4C4;
+    color: #666666;
+}

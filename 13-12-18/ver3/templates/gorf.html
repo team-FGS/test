@@ -1,0 +1,77 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SOCGLO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="/static/gorf.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <!--<script src="main.js"></script>-->
+</head>
+
+<body id="bg">
+    <nav class="navbar navbar-light" id="nav">
+        <a class="navbar-brand" href="/home">
+            <img src="/static/logo.png" class="d-inline-block align-top" id="logo" alt="">
+            SOCGLO
+        </a>
+
+        <ul class="nav navbar-inverse">
+            <li class="nav-item dropdown">
+                <div class="dropdown">
+                    <button class="dropbtn">MY GLOVE</button>
+                    <div class="dropdown-content">
+                        <a href="/status">Status</a>
+                        <a href="/settings">Setting</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <div class="dropdown">
+                    <button class="dropbtn">SOCCER</button>
+                    <div class="dropdown-content">
+                        <a href="/socglo/football/">Stat</a>
+                        <a href="/socglo/football/register">Register</a>
+                    </div>
+                </div>
+            </li>
+            <a class="navbar-brand" href="/logout">
+                <img src="/static/locked-padlock.png" class="d-inline-block align-top" id="logo" alt="">
+            </a>
+        </ul>
+    </nav>
+ 
+    <!--
+    <div>
+        <a class="navbar-brand" href="#">
+            <img src="/static/restart.png" class="d-inline-block align-top" id="e" alt="">
+        </a>
+    </div>
+-->
+    <br>
+    <table id="win">
+        <tr>
+            <th width=50%><!--left-->
+                <center><a href="/settingsandstatus">
+                        <img src="/static/gloves.png" class="d-inline-block align-top" id="button" alt="">
+                </a></center>
+                <div id="text">
+                    <h3>MY GLOVES</h3>
+                </div>
+            </th>
+            <th width="50%"><!--right-->
+                <center><a class="navbar-brand" href="/socglo/football/">
+                    <img src="/static/football.png" class="d-inline-block align-top" id="button" alt="">
+                </a></center>
+                <div id="text">
+                    <h3>SOCCER</h3>
+                </div>
+            </th>
+        </tr>
+    </table>
+</body>
+</html>
